@@ -1,4 +1,4 @@
-package org.example.Functional_Interface;
+git package org.example.Functional_Interface;
 import java.util.*;
 
 @FunctionalInterface
