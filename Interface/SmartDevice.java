@@ -1,4 +1,3 @@
-//package org.example.Functional_Interface;
 
 import java.util.*;
 
