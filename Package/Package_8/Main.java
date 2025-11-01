@@ -12,17 +12,16 @@ public class Main {
 		int r = input.nextInt();
 		System.out.print("Enter the duration of the loan: ");
 		int t = input.nextInt();
-//		System.out.println("For finding simple interest enter 0 or to find compund interest enter 1");
-//		int in = input.nextInt();
-//		if(in==0) {
-//			c.calculateSimpleInterest(p, r, t);
-//		}
-//		else if(in==1) {
-//			c.calculateCompoundInterest(p, r, t);
-//		}
-//		else {
-//			System.out.print("Invalid input");
-//		}
-		c.calculateCompoundInterest(p, r, t);
+		System.out.println("For finding simple interest enter 0 or to find compund interest enter 1");
+		int in = input.nextInt();
+		if(in==0) {
+			c.calculateSimpleInterest(p, r, t);
+		}
+		else if(in==1) {
+			c.calculateCompoundInterest(p, r, t);
+		}
+		else {
+			System.out.print("Invalid input");
+		}
 	}
 }
