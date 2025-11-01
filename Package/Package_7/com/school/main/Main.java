@@ -19,7 +19,7 @@ public class Main{
 		stud.name(name);
 		stud.marks(m1, m2, m3);
 		stud.displaymarks();
-		ana.calculateAverage(stud);
-		ana.findGrade(stud);
+		System.out.println(ana.calculateAverage());
+		System.out.println(ana.findGrade());
 	}
 }

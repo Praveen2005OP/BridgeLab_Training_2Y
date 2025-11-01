@@ -2,11 +2,13 @@ package Package.Package_7.com.school.util;
 import Package.Package_7.com.school.data.*;
 
 public class Analyzer {
-	public float calculateAverage(Student s) {
+	Student s = new Student();
+	public float calculateAverage() {
 		float average = (s.totalmarks())/300;
 		return average;
 	}
-	public String findGrade(Student s) {
+	
+	public String findGrade() {
 		if((s.totalmarks())/300>90) {
 			return "A";
 		}
