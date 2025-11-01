@@ -2,30 +2,18 @@ package Package.Package_7.com.school.util;
 import Package.Package_7.com.school.data.*;
 
 public class Analyzer {
-	Student s = new Student();
-	public float calculateAverage() {
-		float average = (s.totalmarks())/300;
-		return average;
-	}
-	
-	public String findGrade() {
-		if((s.totalmarks())/300>90) {
-			return "A";
-		}
-		else if((s.totalmarks())/300>80&&(s.totalmarks())/300<=90) {
-			return "B";
-		}
-		else if((s.totalmarks())/300>70&&(s.totalmarks())/300<=80) {
-			return "C";
-		}
-		else if((s.totalmarks())/300>60&&(s.totalmarks())/300<=70) {
-			return "D";
-		}
-		else if((s.totalmarks())/300>50&&(s.totalmarks())/300<=60) {
-			return "E";
-		}
-		else {
-			return "F";
-		}
-	}
+    public float calculateAverage(Student s) {
+        return (s.totalmarks() / 300.0f) * 100;
+    }
+
+    public String findGrade(Student s) {
+        float percent = (s.totalmarks() / 300.0f) * 100;
+
+        if (percent > 90) return "A";
+        else if (percent > 80) return "B";
+        else if (percent > 70) return "C";
+        else if (percent > 60) return "D";
+        else if (percent > 50) return "E";
+        else return "F";
+    }
 }
