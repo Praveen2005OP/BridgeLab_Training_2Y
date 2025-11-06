@@ -10,7 +10,6 @@ public class Main {
 		String user = input.next();
 		System.out.print("Enter the password: ");
 		String pass = input.next();
-		System.out.println(r);
 		try {
 			Validate.validateStudent(user, pass, r);
 		}
