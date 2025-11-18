@@ -1,17 +1,16 @@
 package Generic.Maximum_of_Three;
 
 public class Main {
-	public static <T extends Number & Comparable> void maximum(T x, T y, T z) {
+	public static <T extends Number & Comparable<T>> void maximum(T x, T y, T z) {
+		T max=x;
 		
-		if(x.compareTo(y)>=x.compareTo(z) || x.compareTo(y)<=x.compareTo(z)) {
-			System.out.println("Largest number is: "+x);
+		if(y.compareTo(max)>0) {
+			max=y;
 		}
-		else if(y.compareTo(x)>=x.compareTo(z) || y.compareTo(x)<=x.compareTo(z)) {
-			System.out.println("Largest number is: "+y);
+		if(z.compareTo(max)>0) {
+			max=z;
 		}
-		else {
-			System.out.println("Largest number is: "+z);
-		}
+		System.out.println("Largest number is: "+max);
 	}
 	public static void main(String[] args) {
 		maximum(1,2,3);
